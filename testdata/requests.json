@@ -1,0 +1,3735 @@
+[
+  {
+    "markdown": "",
+    "options": {},
+    "body": {
+      "requests": []
+    }
+  },
+  {
+    "markdown": "  \n\t\n",
+    "options": {},
+    "body": {
+      "requests": []
+    }
+  },
+  {
+    "markdown": "| Name | Value |\n|---|---|\n| A | B |",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertTable": {
+            "location": {
+              "index": 1
+            },
+            "rows": 2,
+            "columns": 2
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 12
+            },
+            "text": "B"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 10
+            },
+            "text": "A"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 7
+            },
+            "text": "Value"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 5
+            },
+            "text": "Name"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 25
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 25
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 25
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 5,
+              "endIndex": 9
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 5,
+              "endIndex": 10
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 11,
+              "endIndex": 16
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 11,
+              "endIndex": 17
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 19,
+              "endIndex": 21
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 22,
+              "endIndex": 24
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "[unused]: https://example.com",
+    "options": {},
+    "body": {
+      "requests": []
+    }
+  },
+  {
+    "markdown": "One paragraph.\n\nAnother paragraph.",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "One paragraph.\nAnother paragraph.\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 35
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 35
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 35
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "# Title\n\nBody\n\n## Details",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "Title\nBody\nDetails\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 20
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 20
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 20
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 7
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_1"
+            },
+            "fields": "namedStyleType"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 12,
+              "endIndex": 20
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_2"
+            },
+            "fields": "namedStyleType"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "# One\n## Two\n### Three\n#### Four\n##### Five\n###### Six",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "One\nTwo\nThree\nFour\nFive\nSix\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 29
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 29
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 29
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 5
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_1"
+            },
+            "fields": "namedStyleType"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 5,
+              "endIndex": 9
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_2"
+            },
+            "fields": "namedStyleType"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 9,
+              "endIndex": 15
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_3"
+            },
+            "fields": "namedStyleType"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 15,
+              "endIndex": 20
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_4"
+            },
+            "fields": "namedStyleType"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 20,
+              "endIndex": 25
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_5"
+            },
+            "fields": "namedStyleType"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 25,
+              "endIndex": 29
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_6"
+            },
+            "fields": "namedStyleType"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "| *Left* | Center | Right |\n|:---|:---:|---:|\n| 😀 **é 🚀** | [link](https://example.com) &amp; ~~old~~ | `x \\| y` |",
+    "options": {
+      "startIndex": 8,
+      "tabId": "t.table"
+    },
+    "body": {
+      "requests": [
+        {
+          "insertTable": {
+            "location": {
+              "index": 8,
+              "tabId": "t.table"
+            },
+            "rows": 2,
+            "columns": 3
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 23,
+              "tabId": "t.table"
+            },
+            "text": "x | y"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 21,
+              "tabId": "t.table"
+            },
+            "text": "link & old"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 19,
+              "tabId": "t.table"
+            },
+            "text": "😀 é 🚀"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 16,
+              "tabId": "t.table"
+            },
+            "text": "Right"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 14,
+              "tabId": "t.table"
+            },
+            "text": "Center"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 12,
+              "tabId": "t.table"
+            },
+            "text": "Left"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 8,
+              "endIndex": 63,
+              "tabId": "t.table"
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 8,
+              "endIndex": 63,
+              "tabId": "t.table"
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 8,
+              "endIndex": 63,
+              "tabId": "t.table"
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 12,
+              "endIndex": 16,
+              "tabId": "t.table"
+            },
+            "textStyle": {
+              "italic": true,
+              "bold": true
+            },
+            "fields": "italic,bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 12,
+              "endIndex": 17,
+              "tabId": "t.table"
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 18,
+              "endIndex": 24,
+              "tabId": "t.table"
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 18,
+              "endIndex": 25,
+              "tabId": "t.table"
+            },
+            "paragraphStyle": {
+              "alignment": "CENTER"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 26,
+              "endIndex": 31,
+              "tabId": "t.table"
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 26,
+              "endIndex": 32,
+              "tabId": "t.table"
+            },
+            "paragraphStyle": {
+              "alignment": "END"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 37,
+              "endIndex": 42,
+              "tabId": "t.table"
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 34,
+              "endIndex": 43,
+              "tabId": "t.table"
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 44,
+              "endIndex": 48,
+              "tabId": "t.table"
+            },
+            "textStyle": {
+              "link": {
+                "url": "https://example.com"
+              }
+            },
+            "fields": "link"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 51,
+              "endIndex": 54,
+              "tabId": "t.table"
+            },
+            "textStyle": {
+              "strikethrough": true
+            },
+            "fields": "strikethrough"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 44,
+              "endIndex": 55,
+              "tabId": "t.table"
+            },
+            "paragraphStyle": {
+              "alignment": "CENTER"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 56,
+              "endIndex": 61,
+              "tabId": "t.table"
+            },
+            "textStyle": {
+              "weightedFontFamily": {
+                "fontFamily": "Courier New"
+              },
+              "backgroundColor": {
+                "color": {
+                  "rgbColor": {
+                    "red": 0.95,
+                    "green": 0.95,
+                    "blue": 0.95
+                  }
+                }
+              }
+            },
+            "fields": "weightedFontFamily,backgroundColor"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 56,
+              "endIndex": 62,
+              "tabId": "t.table"
+            },
+            "paragraphStyle": {
+              "alignment": "END"
+            },
+            "fields": "alignment"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "Title\n=====",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "Title\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 7
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 7
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 7
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 7
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_1"
+            },
+            "fields": "namedStyleType"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "**bold *both* [link](https://example.com)** then ~~gone~~",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "bold both link then gone\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 26
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 26
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 26
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 6
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 6,
+              "endIndex": 10
+            },
+            "textStyle": {
+              "bold": true,
+              "italic": true
+            },
+            "fields": "bold,italic"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 10,
+              "endIndex": 11
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 11,
+              "endIndex": 15
+            },
+            "textStyle": {
+              "bold": true,
+              "link": {
+                "url": "https://example.com"
+              }
+            },
+            "fields": "bold,link"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 21,
+              "endIndex": 25
+            },
+            "textStyle": {
+              "strikethrough": true
+            },
+            "fields": "strikethrough"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "# Heading\n\n- Before\n  - **Child**\n\n| H |\n|---|\n| One |\n\n## Between\n\n| A | B |\n|---|---|\n| Two | Three |\n\n- After\n  - *Nested*\n\nTail",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "Heading\nBefore\n\tChild\n"
+          }
+        },
+        {
+          "insertTable": {
+            "location": {
+              "index": 23
+            },
+            "rows": 2,
+            "columns": 1
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 30
+            },
+            "text": "One"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 27
+            },
+            "text": "H"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 36
+            },
+            "text": "Between\n"
+          }
+        },
+        {
+          "insertTable": {
+            "location": {
+              "index": 44
+            },
+            "rows": 2,
+            "columns": 2
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 55
+            },
+            "text": "Three"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 53
+            },
+            "text": "Two"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 50
+            },
+            "text": "B"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 48
+            },
+            "text": "A"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 67
+            },
+            "text": "After\n\tNested\nTail\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 86
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 86
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 86
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 9
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_1"
+            },
+            "fields": "namedStyleType"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 17,
+              "endIndex": 22
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 27,
+              "endIndex": 28
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 27,
+              "endIndex": 29
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 31,
+              "endIndex": 35
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 36,
+              "endIndex": 44
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_2"
+            },
+            "fields": "namedStyleType"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 48,
+              "endIndex": 49
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 48,
+              "endIndex": 50
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 51,
+              "endIndex": 52
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 51,
+              "endIndex": 53
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 55,
+              "endIndex": 59
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 60,
+              "endIndex": 66
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 74,
+              "endIndex": 80
+            },
+            "textStyle": {
+              "italic": true
+            },
+            "fields": "italic"
+          }
+        },
+        {
+          "createParagraphBullets": {
+            "range": {
+              "startIndex": 67,
+              "endIndex": 81
+            },
+            "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+          }
+        },
+        {
+          "createParagraphBullets": {
+            "range": {
+              "startIndex": 9,
+              "endIndex": 23
+            },
+            "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "plain",
+    "options": {
+      "startIndex": 42,
+      "tabId": "t.0"
+    },
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 42,
+              "tabId": "t.0"
+            },
+            "text": "plain\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 42,
+              "endIndex": 48,
+              "tabId": "t.0"
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 42,
+              "endIndex": 48,
+              "tabId": "t.0"
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 42,
+              "endIndex": 48,
+              "tabId": "t.0"
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "| | R |\n|---|---|\n| x |\n\n| Only |\n|---|\n\n| H0 |\n|---|\n| V0 |\n\n| H1 |\n|---|\n| V1 |\n\n| H2 |\n|---|\n| V2 |\n\n| H3 |\n|---|\n| V3 |\n\n| H4 |\n|---|\n| V4 |\n\n| H5 |\n|---|\n| V5 |",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertTable": {
+            "location": {
+              "index": 1
+            },
+            "rows": 2,
+            "columns": 2
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 10
+            },
+            "text": "x"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 7
+            },
+            "text": "R"
+          }
+        },
+        {
+          "insertTable": {
+            "location": {
+              "index": 16
+            },
+            "rows": 1,
+            "columns": 1
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 20
+            },
+            "text": "Only"
+          }
+        },
+        {
+          "insertTable": {
+            "location": {
+              "index": 26
+            },
+            "rows": 2,
+            "columns": 1
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 33
+            },
+            "text": "V0"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 30
+            },
+            "text": "H0"
+          }
+        },
+        {
+          "insertTable": {
+            "location": {
+              "index": 39
+            },
+            "rows": 2,
+            "columns": 1
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 46
+            },
+            "text": "V1"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 43
+            },
+            "text": "H1"
+          }
+        },
+        {
+          "insertTable": {
+            "location": {
+              "index": 52
+            },
+            "rows": 2,
+            "columns": 1
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 59
+            },
+            "text": "V2"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 56
+            },
+            "text": "H2"
+          }
+        },
+        {
+          "insertTable": {
+            "location": {
+              "index": 65
+            },
+            "rows": 2,
+            "columns": 1
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 72
+            },
+            "text": "V3"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 69
+            },
+            "text": "H3"
+          }
+        },
+        {
+          "insertTable": {
+            "location": {
+              "index": 78
+            },
+            "rows": 2,
+            "columns": 1
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 85
+            },
+            "text": "V4"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 82
+            },
+            "text": "H4"
+          }
+        },
+        {
+          "insertTable": {
+            "location": {
+              "index": 91
+            },
+            "rows": 2,
+            "columns": 1
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 98
+            },
+            "text": "V5"
+          }
+        },
+        {
+          "insertText": {
+            "location": {
+              "index": 95
+            },
+            "text": "H5"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 104
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 104
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 104
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 5,
+              "endIndex": 6
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 7,
+              "endIndex": 8
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 7,
+              "endIndex": 9
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 11,
+              "endIndex": 13
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 14,
+              "endIndex": 15
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 20,
+              "endIndex": 24
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 20,
+              "endIndex": 25
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 30,
+              "endIndex": 32
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 30,
+              "endIndex": 33
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 35,
+              "endIndex": 38
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 43,
+              "endIndex": 45
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 43,
+              "endIndex": 46
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 48,
+              "endIndex": 51
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 56,
+              "endIndex": 58
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 56,
+              "endIndex": 59
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 61,
+              "endIndex": 64
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 69,
+              "endIndex": 71
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 69,
+              "endIndex": 72
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 74,
+              "endIndex": 77
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 82,
+              "endIndex": 84
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 82,
+              "endIndex": 85
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 87,
+              "endIndex": 90
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 95,
+              "endIndex": 97
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 95,
+              "endIndex": 98
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 100,
+              "endIndex": 103
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "| | |\n|---|---|\n| | |",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertTable": {
+            "location": {
+              "index": 1
+            },
+            "rows": 2,
+            "columns": 2
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 14
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 14
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 14
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 5,
+              "endIndex": 6
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 7,
+              "endIndex": 8
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 10,
+              "endIndex": 11
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 12,
+              "endIndex": 13
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "😀 **café é 🚀** [link](https://example.com)",
+    "options": {
+      "startIndex": 6927,
+      "tabId": "t.0"
+    },
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 6927,
+              "tabId": "t.0"
+            },
+            "text": "😀 café é 🚀 link\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 6927,
+              "endIndex": 6946,
+              "tabId": "t.0"
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 6927,
+              "endIndex": 6946,
+              "tabId": "t.0"
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 6927,
+              "endIndex": 6946,
+              "tabId": "t.0"
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 6930,
+              "endIndex": 6940,
+              "tabId": "t.0"
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 6941,
+              "endIndex": 6945,
+              "tabId": "t.0"
+            },
+            "textStyle": {
+              "link": {
+                "url": "https://example.com"
+              }
+            },
+            "fields": "link"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "| |\n|---|",
+    "options": {
+      "startIndex": 2147483641
+    },
+    "body": {
+      "requests": [
+        {
+          "insertTable": {
+            "location": {
+              "index": 2147483641
+            },
+            "rows": 1,
+            "columns": 1
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 2147483641,
+              "endIndex": 2147483647
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 2147483641,
+              "endIndex": 2147483647
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 2147483641,
+              "endIndex": 2147483647
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 2147483645,
+              "endIndex": 2147483646
+            },
+            "paragraphStyle": {
+              "alignment": "START"
+            },
+            "fields": "alignment"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "| |\n|---|",
+    "options": {
+      "startIndex": 2147483642
+    },
+    "error": "Rendered content exceeds Google Docs' index range."
+  },
+  {
+    "markdown": "# Heading\n\n**bold**\n\n- one\n  - two",
+    "options": {
+      "tabId": "t.example"
+    },
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1,
+              "tabId": "t.example"
+            },
+            "text": "Heading\nbold\none\n\ttwo\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 23,
+              "tabId": "t.example"
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 23,
+              "tabId": "t.example"
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 23,
+              "tabId": "t.example"
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 9,
+              "tabId": "t.example"
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_1"
+            },
+            "fields": "namedStyleType"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 9,
+              "endIndex": 13,
+              "tabId": "t.example"
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "createParagraphBullets": {
+            "range": {
+              "startIndex": 14,
+              "endIndex": 23,
+              "tabId": "t.example"
+            },
+            "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "| 😀 |\n|---|",
+    "options": {
+      "startIndex": 2147483640
+    },
+    "error": "Rendered content exceeds Google Docs' index range."
+  },
+  {
+    "markdown": "# Heading",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "Heading\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 9
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 9
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 9
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 9
+            },
+            "paragraphStyle": {
+              "namedStyleType": "HEADING_1"
+            },
+            "fields": "namedStyleType"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "| H |\n|---|\n| [x](./relative) |",
+    "options": {},
+    "error": "Unsupported Markdown: link target \"./relative\" (use an absolute HTTP(S) or mailto URL)."
+  },
+  {
+    "markdown": "| H |\n|---|\n| ![x](https://example.com/x.png) |",
+    "options": {},
+    "error": "Unsupported Markdown: images."
+  },
+  {
+    "markdown": "A &amp; B \\*literal\\* **&#x1F680;**",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "A & B *literal* 🚀\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 20
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 20
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 20
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 17,
+              "endIndex": 19
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "| H |\n|---|\n| <b>raw</b> |",
+    "options": {},
+    "error": "Unsupported Markdown: html_inline."
+  },
+  {
+    "markdown": "| H |\n|---|\n| &#xE000; |",
+    "options": {},
+    "error": "Rendered text contains characters removed by Google Docs."
+  },
+  {
+    "markdown": "| H |\n|---|\n| &#13; |",
+    "options": {},
+    "error": "Rendered text contains characters removed by Google Docs."
+  },
+  {
+    "markdown": "One\r\nline\r\n\r\nNext\r\n",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "One line\nNext\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 15
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 15
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 15
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "Use `a ** b`.\n\n```ts\nconst x = \"😀\";\nnext();\n```",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "Use a ** b.\nconst x = \"😀\";\nnext();\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 37
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 37
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 37
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 5,
+              "endIndex": 11
+            },
+            "textStyle": {
+              "weightedFontFamily": {
+                "fontFamily": "Courier New"
+              },
+              "backgroundColor": {
+                "color": {
+                  "rgbColor": {
+                    "red": 0.95,
+                    "green": 0.95,
+                    "blue": 0.95
+                  }
+                }
+              }
+            },
+            "fields": "weightedFontFamily,backgroundColor"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 13,
+              "endIndex": 36
+            },
+            "textStyle": {
+              "weightedFontFamily": {
+                "fontFamily": "Courier New"
+              },
+              "backgroundColor": {
+                "color": {
+                  "rgbColor": {
+                    "red": 0.95,
+                    "green": 0.95,
+                    "blue": 0.95
+                  }
+                }
+              }
+            },
+            "fields": "weightedFontFamily,backgroundColor"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "    x\n    y\n",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "x\ny\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 5
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 5
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 5
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 4
+            },
+            "textStyle": {
+              "weightedFontFamily": {
+                "fontFamily": "Courier New"
+              },
+              "backgroundColor": {
+                "color": {
+                  "rgbColor": {
+                    "red": 0.95,
+                    "green": 0.95,
+                    "blue": 0.95
+                  }
+                }
+              }
+            },
+            "fields": "weightedFontFamily,backgroundColor"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "```\n```",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 2
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 2
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "> Outer\n>\n> > **Inner**\n\nPlain",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "Outer\nInner\nPlain\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 19
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 19
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 19
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 7
+            },
+            "paragraphStyle": {
+              "indentStart": {
+                "magnitude": 18,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 18,
+                "unit": "PT"
+              }
+            },
+            "fields": "indentStart,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 7,
+              "endIndex": 12
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 7,
+              "endIndex": 13
+            },
+            "paragraphStyle": {
+              "indentStart": {
+                "magnitude": 36,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 36,
+                "unit": "PT"
+              }
+            },
+            "fields": "indentStart,indentFirstLine"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "- A\n- B\n\nBreak\n\n1. One\n2. Two",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "A\nB\nBreak\nOne\nTwo\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 19
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 19
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 19
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "createParagraphBullets": {
+            "range": {
+              "startIndex": 11,
+              "endIndex": 19
+            },
+            "bulletPreset": "NUMBERED_DECIMAL_ALPHA_ROMAN"
+          }
+        },
+        {
+          "createParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 5
+            },
+            "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "- Parent\n  - **😀 child**\n    - Deep\n- Last\n\nAfter\n\n- Second\n  - Nested",
+    "options": {
+      "startIndex": 50
+    },
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 50
+            },
+            "text": "Parent\n\t😀 child\n\t\tDeep\nLast\nAfter\nSecond\n\tNested\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 50,
+              "endIndex": 100
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 50,
+              "endIndex": 100
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 50,
+              "endIndex": 100
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 58,
+              "endIndex": 66
+            },
+            "textStyle": {
+              "bold": true
+            },
+            "fields": "bold"
+          }
+        },
+        {
+          "createParagraphBullets": {
+            "range": {
+              "startIndex": 85,
+              "endIndex": 100
+            },
+            "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+          }
+        },
+        {
+          "createParagraphBullets": {
+            "range": {
+              "startIndex": 50,
+              "endIndex": 79
+            },
+            "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "1. One\n   1. Nested\n2. Two",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "One\n\tNested\nTwo\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 17
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 17
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 17
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "createParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 17
+            },
+            "bulletPreset": "NUMBERED_DECIMAL_ALPHA_ROMAN"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "- Item\n\n  Continuation\n\n- Next",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "Item\nContinuation\nNext\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 24
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 24
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 24
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 6,
+              "endIndex": 19
+            },
+            "paragraphStyle": {
+              "indentStart": {
+                "magnitude": 18,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 18,
+                "unit": "PT"
+              }
+            },
+            "fields": "indentStart,indentFirstLine"
+          }
+        },
+        {
+          "createParagraphBullets": {
+            "range": {
+              "startIndex": 19,
+              "endIndex": 24
+            },
+            "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+          }
+        },
+        {
+          "createParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 6
+            },
+            "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "-\n- next",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "\nnext\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 7
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 7
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 7
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "createParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 7
+            },
+            "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "[Example][ref] <mailto:test@example.com>\n\n[ref]: https://example.com",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "Example mailto:test@example.com\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 33
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 33
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 33
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 8
+            },
+            "textStyle": {
+              "link": {
+                "url": "https://example.com"
+              }
+            },
+            "fields": "link"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 9,
+              "endIndex": 32
+            },
+            "textStyle": {
+              "link": {
+                "url": "mailto:test@example.com"
+              }
+            },
+            "fields": "link"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "- | A |\n  |---|\n  | B |",
+    "options": {},
+    "error": "Unsupported Markdown at line 1: tables inside lists."
+  },
+  {
+    "markdown": "> | A |\n> |---|\n> | B |",
+    "options": {},
+    "error": "Unsupported Markdown at line 1: tables inside blockquotes."
+  },
+  {
+    "markdown": "![alt](https://example.com/image.png)",
+    "options": {},
+    "error": "Unsupported Markdown: images."
+  },
+  {
+    "markdown": "<div>hello</div>",
+    "options": {},
+    "error": "Unsupported Markdown at line 1: html_block."
+  },
+  {
+    "markdown": "hello <span>world</span>",
+    "options": {},
+    "error": "Unsupported Markdown: html_inline."
+  },
+  {
+    "markdown": "<!-- hidden -->",
+    "options": {},
+    "error": "Unsupported Markdown at line 1: html_block."
+  },
+  {
+    "markdown": "[file](./file.md)",
+    "options": {},
+    "error": "Unsupported Markdown: link target \"./file.md\" (use an absolute HTTP(S) or mailto URL)."
+  },
+  {
+    "markdown": "[section](#section)",
+    "options": {},
+    "error": "Unsupported Markdown: link target \"#section\" (use an absolute HTTP(S) or mailto URL)."
+  },
+  {
+    "markdown": "---",
+    "options": {},
+    "error": "Unsupported Markdown at line 1: thematic breaks."
+  },
+  {
+    "markdown": "first  \nsecond",
+    "options": {},
+    "error": "Unsupported Markdown: explicit line breaks (use separate paragraphs)."
+  },
+  {
+    "markdown": "3. Third",
+    "options": {},
+    "error": "Unsupported Markdown at line 1: ordered lists starting at a number other than 1."
+  },
+  {
+    "markdown": "- one\n  1. nested",
+    "options": {},
+    "error": "Unsupported Markdown at line 2: mixed ordered/unordered list nesting."
+  },
+  {
+    "markdown": "- one\n\n  ```\n  code\n  ```",
+    "options": {},
+    "error": "Unsupported Markdown at line 3: code blocks inside lists."
+  },
+  {
+    "markdown": "> - one",
+    "options": {},
+    "error": "Unsupported Markdown at line 1: lists inside blockquotes."
+  },
+  {
+    "markdown": "- > one",
+    "options": {},
+    "error": "Unsupported Markdown at line 1: blockquotes inside lists."
+  },
+  {
+    "markdown": "Hello",
+    "options": {
+      "startIndex": 0
+    },
+    "error": "startIndex must be an integer between 1 and 2147483647."
+  },
+  {
+    "markdown": "Hello",
+    "options": {
+      "startIndex": -1
+    },
+    "error": "startIndex must be an integer between 1 and 2147483647."
+  },
+  {
+    "markdown": "Hello",
+    "options": {
+      "startIndex": 2147483648
+    },
+    "error": "startIndex must be an integer between 1 and 2147483647."
+  },
+  {
+    "markdown": "Hello",
+    "options": {
+      "tabId": ""
+    },
+    "error": "tabId must be a non-empty string when provided."
+  },
+  {
+    "markdown": "Hello",
+    "options": {
+      "tabId": " "
+    },
+    "error": "tabId must be a non-empty string when provided."
+  },
+  {
+    "markdown": "Hello",
+    "options": {
+      "startIndex": 2147483646
+    },
+    "error": "Rendered content exceeds Google Docs' index range."
+  },
+  {
+    "markdown": "a\u0001b",
+    "options": {},
+    "error": "Input contains control or private-use characters removed by Google Docs."
+  },
+  {
+    "markdown": "ab",
+    "options": {},
+    "error": "Input contains control or private-use characters removed by Google Docs."
+  },
+  {
+    "markdown": "&#xE000;",
+    "options": {},
+    "error": "Rendered text contains characters removed by Google Docs."
+  },
+  {
+    "markdown": "&#13;",
+    "options": {},
+    "error": "Rendered text contains characters removed by Google Docs."
+  },
+  {
+    "markdown": "&#x1B;",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "�\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 3
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 3
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "markdown": "`code`",
+    "options": {},
+    "body": {
+      "requests": [
+        {
+          "insertText": {
+            "location": {
+              "index": 1
+            },
+            "text": "code\n"
+          }
+        },
+        {
+          "deleteParagraphBullets": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 6
+            }
+          }
+        },
+        {
+          "updateParagraphStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 6
+            },
+            "paragraphStyle": {
+              "namedStyleType": "NORMAL_TEXT",
+              "indentStart": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentEnd": {
+                "magnitude": 0,
+                "unit": "PT"
+              },
+              "indentFirstLine": {
+                "magnitude": 0,
+                "unit": "PT"
+              }
+            },
+            "fields": "namedStyleType,indentStart,indentEnd,indentFirstLine"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 6
+            },
+            "textStyle": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            },
+            "fields": "bold,italic,strikethrough,underline,link,backgroundColor,weightedFontFamily"
+          }
+        },
+        {
+          "updateTextStyle": {
+            "range": {
+              "startIndex": 1,
+              "endIndex": 5
+            },
+            "textStyle": {
+              "weightedFontFamily": {
+                "fontFamily": "Courier New"
+              },
+              "backgroundColor": {
+                "color": {
+                  "rgbColor": {
+                    "red": 0.95,
+                    "green": 0.95,
+                    "blue": 0.95
+                  }
+                }
+              }
+            },
+            "fields": "weightedFontFamily,backgroundColor"
+          }
+        }
+      ]
+    }
+  }
+]

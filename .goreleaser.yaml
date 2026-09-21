@@ -1,0 +1,35 @@
+version: 2
+project_name: md2gdoc
+
+builds:
+  - main: .
+    binary: md2gdoc
+    env:
+      - CGO_ENABLED=0
+    goos: [darwin, linux, windows]
+    goarch: [amd64, arm64]
+    flags: [-trimpath]
+    ldflags:
+      - -s -w -X main.version={{.Version}}
+
+archives:
+  - formats: [tar.gz]
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+    files:
+      - README.md
+      - THIRD_PARTY_NOTICES.txt
+      - skills/md2gdoc/SKILL.md
+
+checksum:
+  name_template: checksums.txt
+
+changelog:
+  sort: asc
+
+release:
+  github:
+    owner: javiermolinar
+    name: md2gdoc
