@@ -9,6 +9,8 @@ import (
 	"runtime/debug"
 	"strconv"
 	"strings"
+
+	"golang.org/x/term"
 )
 
 var version = "dev" // Set by GoReleaser; go install gets its module version below.
@@ -16,7 +18,8 @@ var version = "dev" // Set by GoReleaser; go install gets its module version bel
 const help = `Usage: md2gdoc [FILE|-] [options]
 
 Convert Markdown to Google Docs requests or a standalone HTML document.
-Reads stdin when FILE is omitted or '-'. Makes no API calls.
+Reads piped stdin when FILE is omitted; shows help at an interactive prompt.
+Use '-' to read stdin explicitly, including interactive input. Makes no API calls.
 
 Options:
   --format FORMAT   Output format: requests (default) or html
@@ -132,7 +135,7 @@ func buildVersion() string {
 	return version
 }
 
-func execute(args []string, stdin io.Reader, stdout io.Writer) error {
+func execute(args []string, stdin io.Reader, stdout io.Writer, stdinIsTerminal bool) error {
 	o, err := parseArgs(args)
 	if err != nil {
 		return err
@@ -143,6 +146,10 @@ func execute(args []string, stdin io.Reader, stdout io.Writer) error {
 	}
 	if o.version {
 		_, err = fmt.Fprintln(stdout, buildVersion())
+		return err
+	}
+	if o.file == "" && stdinIsTerminal {
+		_, err = io.WriteString(stdout, help)
 		return err
 	}
 	var input []byte
@@ -185,7 +192,7 @@ func execute(args []string, stdin io.Reader, stdout io.Writer) error {
 }
 
 func main() {
-	if err := execute(os.Args[1:], os.Stdin, os.Stdout); err != nil {
+	if err := execute(os.Args[1:], os.Stdin, os.Stdout, term.IsTerminal(int(os.Stdin.Fd()))); err != nil {
 		fmt.Fprintf(os.Stderr, "md2gdoc: %v\n", err)
 		os.Exit(1)
 	}

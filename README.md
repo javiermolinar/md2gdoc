@@ -40,7 +40,8 @@ md2gdoc input.md --start-index 6927 --tab-id t.0 > requests.json
 md2gdoc input.md --format html > document.html
 ```
 
-Omit the filename or use `-` to read stdin. Run `md2gdoc --help` for options.
+Pipe Markdown into `md2gdoc`, or use `-` to read stdin explicitly. With no input
+at an interactive prompt, it shows help. Run `md2gdoc --help` for options.
 Leading YAML frontmatter is preserved as literal metadata. Use `--relative-links text`
 to keep local links as their label and path instead of rejecting them.
 

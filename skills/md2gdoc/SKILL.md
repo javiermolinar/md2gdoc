@@ -30,7 +30,8 @@ Leading YAML frontmatter is preserved as literal metadata. When local or
 fragment-only links have no web destination, use `--relative-links text` to keep
 both their label and path visible. Do not invent public URLs for local files.
 
-Omit the filename or use `-` for stdin. Check conversion succeeds before using
+Pipe Markdown into `md2gdoc`, or use `-` for explicit stdin. A bare interactive
+invocation shows help. Check conversion succeeds before using
 the output: shell redirection can leave an empty file after an error. Preserve
 the source content when handling unsupported constructs; do not silently drop
 them to make conversion succeed.

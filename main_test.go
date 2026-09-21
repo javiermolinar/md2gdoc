@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"io"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -59,7 +60,7 @@ func TestCLI(t *testing.T) {
 	for _, tc := range cases {
 		t.Run(tc.name, func(t *testing.T) {
 			var stdout bytes.Buffer
-			err := execute(tc.args, strings.NewReader(tc.input), &stdout)
+			err := execute(tc.args, strings.NewReader(tc.input), &stdout, false)
 			if tc.errorContains != "" {
 				if err == nil || !strings.Contains(err.Error(), tc.errorContains) {
 					t.Fatalf("expected %q, got %v", tc.errorContains, err)
@@ -90,7 +91,7 @@ func TestCLIFile(t *testing.T) {
 		t.Fatal(err)
 	}
 	var out bytes.Buffer
-	if err := execute([]string{file, "--start-index", "10", "--tab-id", "t.0"}, nil, &out); err != nil {
+	if err := execute([]string{file, "--start-index", "10", "--tab-id", "t.0"}, nil, &out, true); err != nil {
 		t.Fatal(err)
 	}
 	var body batchUpdateBody
@@ -120,11 +121,37 @@ func TestCLIEmptyInputFile(t *testing.T) {
 	}
 	defer stdin.Close()
 	var out bytes.Buffer
-	if err := execute([]string{"--compact"}, stdin, &out); err != nil {
+	if err := execute([]string{"--compact"}, stdin, &out, false); err != nil {
 		t.Fatal(err)
 	}
 	if out.String() != "{\"requests\":[]}\n" {
 		t.Fatalf("unexpected output: %s", &out)
+	}
+}
+
+type unreadInput struct{ t *testing.T }
+
+func (r unreadInput) Read([]byte) (int, error) {
+	r.t.Fatal("interactive invocation must not wait for stdin")
+	return 0, io.EOF
+}
+
+func TestCLIInteractiveInput(t *testing.T) {
+	for _, args := range [][]string{nil, {"--format", "html"}, {"--compact"}} {
+		var out bytes.Buffer
+		if err := execute(args, unreadInput{t}, &out, true); err != nil {
+			t.Fatal(err)
+		}
+		if out.String() != help {
+			t.Fatalf("args %v: expected help, got %q", args, &out)
+		}
+	}
+	var out bytes.Buffer
+	if err := execute([]string{"-", "--compact"}, strings.NewReader("Hello"), &out, true); err != nil {
+		t.Fatal(err)
+	}
+	if !json.Valid(out.Bytes()) || !strings.Contains(out.String(), `"text":"Hello\n"`) {
+		t.Fatalf("explicit '-' should still read interactive stdin: %s", &out)
 	}
 }
 
